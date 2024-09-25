@@ -61,7 +61,7 @@ public class XposedModuleLoader {
                         continue;
                     } else if (IXposedHookInitPackageResources.class.isAssignableFrom(moduleClass)) {
                         Log.i(TAG, "    This class requires resource-related hooks (which are disabled), skipping it.");
-                        continue;
+                        //continue;
                     }
 
                     final Object moduleInstance = moduleClass.newInstance();
