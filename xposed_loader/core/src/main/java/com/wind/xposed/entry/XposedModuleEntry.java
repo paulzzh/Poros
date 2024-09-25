@@ -59,7 +59,7 @@ public class XposedModuleEntry {
         }
 
         Context context = XpatchUtils.createAppContext();
-        SandHookInitialization.init(context);
+        // SandHookInitialization.init(context);
         init(context);
     }
 
