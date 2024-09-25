@@ -16,6 +16,7 @@ cp -r injector/arm64-v8a output/injector
 cp -r injector/armeabi-v7a output/injector
 
 mkdir output/glue
+cp -r core/output/x86 output/glue
 cp -r core/output/arm64-v8a output/glue
 cp -r core/output/armeabi-v7a output/glue
 
