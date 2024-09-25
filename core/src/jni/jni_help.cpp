@@ -218,7 +218,7 @@ namespace jni {
         ScopedLocalRef<jobjectArray> jarray(env, env->NewObjectArray(1, cls.get(), nullptr));
         env->SetObjectArrayElement(jarray.get(), 0, mystring.get());
 
-        void* setHiddenApiExemptions_art_method = env->GetMethodID(vmRumtime_class.get(),
+        /*void* setHiddenApiExemptions_art_method = env->GetMethodID(vmRumtime_class.get(),
             "setHiddenApiExemptions",
             "([Ljava/lang/String;)V");
         if (setHiddenApiExemptions_art_method) {
@@ -226,7 +226,7 @@ namespace jni {
         }
         else {
             LOGE("setHiddenApiExemptions method id is not founded !!!");
-        }
+        }*/
     }
 
     jobject GetAppClassLoader(JNIEnv *env) {
