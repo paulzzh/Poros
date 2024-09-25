@@ -8,12 +8,13 @@ echo "cur_dir : $cur_dir"
 
 abi_arm64="arm64-v8a"
 abi_arm32="armeabi-v7a"
+abi_x86="x86"
 
 if [ ! -d "$cur_dir/build" ]; then
   mkdir "$cur_dir/build"
 fi
 
-build_type_array=($abi_arm32 $abi_arm64)
+build_type_array=($abi_x86 $abi_arm32 $abi_arm64)
 
 for value in "${build_type_array[@]}"; do
   build_dir=$cur_dir/build/$value

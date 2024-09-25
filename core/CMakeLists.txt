@@ -29,7 +29,9 @@ target_link_libraries(injector-glue
         )
 
 # set the target so file's output path
-if (${ANDROID_ABI} STREQUAL "armeabi-v7a")
+if (${ANDROID_ABI} STREQUAL "x86")
+    set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/x86) 
+elseif (${ANDROID_ABI} STREQUAL "armeabi-v7a")
     set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/armeabi-v7a) 
 elseif (${ANDROID_ABI} STREQUAL "arm64-v8a")
     set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/output/arm64-v8a) 

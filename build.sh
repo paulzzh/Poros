@@ -48,6 +48,9 @@ cp -r core/output/arm64-v8a cli/assets/glue
 cp -r core/output/armeabi-v7a output/glue
 cp -r core/output/armeabi-v7a cli/assets/glue
 
+cp -r core/output/x86 output/glue
+cp -r core/output/x86 cli/assets/glue
+
 cp start.sh output/start.sh
 
 cargo build --release --manifest-path cli/Cargo.toml
